@@ -1581,7 +1581,7 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
                     PC-A1 > Command Prompt
                 </div>
                 <div class="code-body">
-<span class="cmd">C:\&gt;</span> ping <span class="placeholder">192.168.0.______</span>  <span class="comment">&lt;-- IP di PC-B1</span>
+<span class="cmd">C:\&gt;</span> ping <span class="placeholder">192.168.0.142</span>  <span class="comment">&lt;-- IP di PC-B1</span>
 
 <span class="output">Pinging 192.168.0.______ with 32 bytes of data:</span>
 
@@ -1609,9 +1609,7 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
     </div>
 
     <div class="img-placeholder">
-        <div class="icon">❌</div>
-        <div class="label">[IMG_19] — Output del comando ping da PC-A1 verso PC-B1 (fallimento - Request timed out)</div>
-        <div class="hint">Cattura il Command Prompt di PC-A1 con il ping fallito verso un IP della Rete B</div>
+		<img src="ping-pca1-pcb1.png"/>
     </div>
 
     <h3>Analisi nella Simulation Mode del ping fallito</h3>
@@ -1634,9 +1632,7 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
     </div>
 
     <div class="img-placeholder">
-        <div class="icon">🚫</div>
-        <div class="label">[IMG_20] — Simulation Mode: il pacchetto da PC-A1 verso PC-B1 viene scartato (X rossa)</div>
-        <div class="hint">Cattura la topologia in Simulation Mode mostrando la X rossa sul pacchetto scartato</div>
+		<img src="ping-fallito.png"/>
     </div>
 
     <div class="step">
@@ -1653,9 +1649,7 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
     </div>
 
     <div class="img-placeholder">
-        <div class="icon">📋</div>
-        <div class="label">[IMG_21] — PDU Information del pacchetto scartato: motivo dello scarto</div>
-        <div class="hint">Cattura la finestra PDU che mostra il messaggio di errore o la spiegazione dello scarto</div>
+       <img src="motivazione-scarto-pacchetto.png"/>
     </div>
 
     <div class="exercise-box">
